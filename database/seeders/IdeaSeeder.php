@@ -23,12 +23,14 @@ materiales educativos.',
  'autor' => 'Pedro',
  'categoria_id' => 2
  ]);
- 
-
-$this->call([
- CategoriaSeeder::class,
- IdeaSeeder::class,
+ Idea::create([
+ 'titulo' => 'Asistente domestico',
+ 'descripcion' => 'Desarrollar un sistema local para automatizar el hogar usando Python y sensores conectados.',
+ 'estado' => 'en revisión',
+ 'autor' => 'Mariel',
+ 'categoria_id' => 3
  ]);
+
  }
  protected $fillable = [
  'titulo',
